@@ -1,0 +1,8 @@
+---
+- name: List all facts
+  hosts: all
+  gather_facts: yes
+  tasks:
+    - setup:
+    - debug:
+        msg: "setup vars printed above"
